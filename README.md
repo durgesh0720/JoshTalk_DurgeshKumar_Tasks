@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 ## 4. Apply Database Migrations
 ```bash
-
+python manage.py makemigrations
 python manage.py migrate
 ```
 ## 5. Create a Superuser (Optional, for Admin Access)
@@ -83,7 +83,7 @@ Description: Creates a new task with specified details and assigns it to users.
 Response (201 Created):
 
 ```
-
+#### Response (200 OK):
 ### json
 ```
 {
@@ -114,7 +114,7 @@ Description: Updates the list of users assigned to a specific task.
 }
 Response (200 OK):
 ```
-
+#### Response (200 OK):
 ### json
 ```
 {
@@ -180,7 +180,7 @@ Password: test
 Create additional users via the admin panel (/admin/) or use the seed.py script.
 
 ## Project Structure
-
+```
 server/
 ├── manage.py
 ├── requirements.txt
@@ -200,3 +200,5 @@ server/
 │   ├── urls.py
 │   └── views.py
 └── README.md
+
+```
